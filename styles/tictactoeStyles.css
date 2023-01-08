@@ -90,5 +90,7 @@ body {
 .popup-button:hover {
   background-color: #73000A;
   color: white;
-  border: 2px solid white;
+  border: 2px solid
+  white;
 }
+

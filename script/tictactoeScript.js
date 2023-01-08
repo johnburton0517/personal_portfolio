@@ -144,81 +144,62 @@ function twoPlayerButton() {
     singlePlayer = false;
 }
 
-// computer plays randomly
-// function computerPlay () {
-//     if (singlePlayer === true) {
-//         // wait for 1 second before computer plays
-//         setInterval(() => {
-//             if (currentPlayer === 'O' && hasWinner === false) {
-//                 // randomly select a cell that is not filled
-//                 let randomCell = Math.floor(Math.random() * 9);
-//                 while (cells[randomCell].textContent !== ' ' && singlePlayer === true) {
-//                     randomCell = Math.floor(Math.random() * 9);
-//                 }
-//                 if (singlePlayer === true) {
-//                     cells[randomCell].textContent = currentPlayer;
-//                     currentPlayer = 'X'
-//                     document.getElementById('current-player').textContent = "Current Player: " + currentPlayer;
-//                     checkWinner();
-//                 }
-//             }
-//         }, 1000);
-//     }
-// }
-
 // computer plays best move
 function computerPlay () {
-    if (singlePlayer === true) {
-        // look at the board and find what moves can be made
-        let availableMoves = [];
-        for (let i = 0; i < cells.length; i++) {
-            if (cells[i].textContent === ' ') {
-                availableMoves.push(i);
+    setTimeout(() => {
+        if (singlePlayer === true) {
+            // look at the board and find what moves can be made
+            let availableMoves = [];
+            for (let i = 0; i < cells.length; i++) {
+                if (cells[i].textContent === ' ') {
+                    availableMoves.push(i);
+                }
             }
-        }
 
-        // console log the available moves
-        console.log(availableMoves);
+            // console log the available moves
+            // console.log(availableMoves);
 
-        // look at the available moves and find if there is a winning move
-        // if there is a winning move, make that move
-        for (let i = 0; i < availableMoves.length; i++) {
-            let move = availableMoves[i];
-            cells[move].textContent = currentPlayer;
-            checkingMove = true;
-            checkWinner(checkingMove);
-            if (hasWinner === true) {
+            // look at the available moves and find if there is a winning move
+            // if there is a winning move, make that move
+            for (let i = 0; i < availableMoves.length; i++) {
+                let move = availableMoves[i];
                 cells[move].textContent = currentPlayer;
-                currentPlayer = 'X'
-                document.getElementById('current-player').textContent = "Current Player: " + currentPlayer;
-                checkWinner(false);
-                return;
+                checkingMove = true;
+                checkWinner(checkingMove);
+                if (hasWinner === true) {
+                    cells[move].textContent = currentPlayer;
+                    currentPlayer = 'X'
+                    document.getElementById('current-player').textContent = "Current Player: " + currentPlayer;
+                    checkWinner(false);
+                    return;
+                }
+                cells[move].textContent = ' ';
             }
-            cells[move].textContent = ' ';
-        }
-        
-        // look at the available moves and find if there is a blocking move
-        // if there is a blocking move, make that move
-        for (let i = 0; i < availableMoves.length; i++) {
-            let move = availableMoves[i];
-            cells[move].textContent = 'X';
-            checkingMove = true;
-            checkWinner(checkingMove);
-            if (hasWinner === true) {
-                cells[move].textContent = currentPlayer;
-                currentPlayer = 'X'
-                document.getElementById('current-player').textContent = "Current Player: " + currentPlayer;
-                checkWinner(false);
-                return;
+            
+            // look at the available moves and find if there is a blocking move
+            // if there is a blocking move, make that move
+            for (let i = 0; i < availableMoves.length; i++) {
+                let move = availableMoves[i];
+                cells[move].textContent = 'X';
+                checkingMove = true;
+                checkWinner(checkingMove);
+                if (hasWinner === true) {
+                    cells[move].textContent = currentPlayer;
+                    currentPlayer = 'X'
+                    document.getElementById('current-player').textContent = "Current Player: " + currentPlayer;
+                    checkWinner(false);
+                    return;
+                }
+                cells[move].textContent = ' ';
             }
-            cells[move].textContent = ' ';
-        }
 
-        // if there is no winning move or blocking move, make a random move
-        let randomCell = Math.floor(Math.random() * availableMoves.length);
-        cells[availableMoves[randomCell]].textContent = currentPlayer;
-        currentPlayer = 'X'
-        document.getElementById('current-player').textContent = "Current Player: " + currentPlayer;
-        checkWinner(false);
-    }
+            // if there is no winning move or blocking move, make a random move
+            let randomCell = Math.floor(Math.random() * availableMoves.length);
+            cells[availableMoves[randomCell]].textContent = currentPlayer;
+            currentPlayer = 'X'
+            document.getElementById('current-player').textContent = "Current Player: " + currentPlayer;
+            checkWinner(false);
+        }
+    }, 500);
 }
+
