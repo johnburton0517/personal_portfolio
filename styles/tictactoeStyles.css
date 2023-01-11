@@ -1,5 +1,6 @@
 .navbar {
-  background-color: #73000A;
+  /* background-color: #73000A; */
+  background-color: #05072a;
   position: fixed;
 }
 
@@ -48,7 +49,8 @@ body {
 }
 
 .game-info-button:hover {
-  background-color: #73000A;
+  /* background-color: #73000A; */
+  background-color: #05072a;
   color: white;
   border: 2px solid black;
 }
@@ -62,7 +64,8 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #73000A;
+  /* background-color: #73000A; */
+  background-color: #05072a;
   border: 1px solid black;
   border-radius: 16px;
   padding: 16px;
@@ -88,7 +91,8 @@ body {
 }
 
 .popup-button:hover {
-  background-color: #73000A;
+  /* background-color: #73000A; */
+  background-color: #05072a;
   color: white;
   border: 2px solid
   white;

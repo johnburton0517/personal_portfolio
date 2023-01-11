@@ -6,7 +6,6 @@
 /* hero background image */
 .bgimage {
     height:100vh;
-    /* background: url('../images/virtual_background_willy_b_2.jpg'); */
     background-size:cover;
     position:relative;
 }
