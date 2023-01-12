@@ -32,17 +32,30 @@ card1.addEventListener('click', function() {
     // send card to foreground
     card.style.zIndex = '1';
 
+    // transition speed
+    card.style.transition = 'transform .75s ease-in-out';
+
+    card.style.backgroundColor = 'white';
+
     // translate card to middle of screen
     card.style.transform = 'translate(105%, -50%)';
 
     // redirect to href=tictactoe.html after .5 seconds
     setTimeout(function() {
         window.location.href = 'tictactoe.html';
-    }, 500);
+    }, 750);
 });
 
 card2.addEventListener('click', function() {
     var card = document.getElementById('card2');
+
+    // send card to foreground
+    card.style.zIndex = '1';
+
+    // transition speed
+    card.style.transition = 'transform .75s ease-in-out';
+
+    card.style.backgroundColor = 'white';
 
     // translate card to middle of screen
     card.style.transform = 'translate(0%, -50%)';
@@ -50,11 +63,16 @@ card2.addEventListener('click', function() {
     // redirect to href="pong.html after .5 seconds
     setTimeout(function() {
         window.location.href = 'pong.html';
-    }, 500);
+    }, 750);
 });
 
 card3.addEventListener('click', function() {
     var card = document.getElementById('card3');
+
+    // transition speed
+    card.style.transition = 'transform .75s ease-in-out';
+
+    card.style.backgroundColor = 'white';
     
     // translate card to middle of screen
     card.style.transform = 'translate(-106%, -50%)';
@@ -62,7 +80,7 @@ card3.addEventListener('click', function() {
     // redirect to href=CircleRacing.html after .5 seconds
     setTimeout(function() {
         window.location.href = 'CircleRacing.html';
-    }, 500);
+    }, 750);
     
 });
 
@@ -72,13 +90,18 @@ card4.addEventListener('click', function() {
     // send card to foreground
     card.style.zIndex = '1';
 
+    // transition speed
+    card.style.transition = 'transform .75s ease-in-out';
+
+    card.style.backgroundColor = 'white';
+
     // translate card to middle of screen
     card.style.transform = 'translate(106%, -160%)';
 
     // redirect to href=tictactoe.html after .5 seconds
     setTimeout(function() {
         // window.location.href = 'tictactoe.html';
-    }, 500);
+    }, 750);
 });
 
 card5.addEventListener('click', function() {
@@ -87,13 +110,18 @@ card5.addEventListener('click', function() {
     // send card to foreground
     card.style.zIndex = '1';
 
+    // transition speed
+    card.style.transition = 'transform .75s ease-in-out';
+
+    card.style.backgroundColor = 'white';
+
     // translate card to middle of screen
     card.style.transform = 'translate(0, -160%)';
 
     // redirect to href=tictactoe.html after .5 seconds
     setTimeout(function() {
         // window.location.href = 'tictactoe.html';
-    }, 500);
+    }, 750);
 });
 
 card6.addEventListener('click', function() {
@@ -102,11 +130,19 @@ card6.addEventListener('click', function() {
     // send card to foreground
     card.style.zIndex = '1';
 
+    // transition speed
+    card.style.transition = 'transform .75s ease-in-out';
+
+    card.style.backgroundColor = 'white';
+
+    // transition speed
+    card.style.transition = 'transform 1s ease-in-out';
+
     // translate card to middle of screen
     card.style.transform = 'translate(-106%, -160%)';
 
     // redirect to href=tictactoe.html after .5 seconds
     setTimeout(function() {
         // window.location.href = 'tictactoe.html';
-    }, 500);
+    }, 750);
 });
