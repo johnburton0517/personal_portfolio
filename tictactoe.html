@@ -33,36 +33,53 @@
         </nav>
 
 
-        <h1 class="game-title" id="game-title">Tic Tac Toe</h1>
+        <!-- animated background -->
+        <div class="area" >
+            <ul class="circles">
+                <li>X</li>
+                <li>O</li>
+                <li>O</li>
+                <li>X</li>
+                <li>O</li>
+                <li>X</li>
+                <li>X</li>
+                <li>O</li>
+                <li>X</li>
+                <li>O</li>
+            </ul>
 
-        <!-- popup pront for single or mulitplayer -->
-        <div class="popup" id="popup">
-            <div class="popup-content">
-                <h2 class="popup-title">Choose Game Mode</h2>
-                <div class="popup-buttons">
-                    <button class="popup-button" id="single-player" onclick="singlePlayerButton()" >Single Player</button>
-                    <button class="popup-button" id="multi-player" onclick="twoPlayerButton()">Multi Player</button>
+            <h1 class="game-title" id="game-title">Tic Tac Toe</h1>
+
+            <!-- popup pront for single or mulitplayer -->
+            <div class="popup" id="popup">
+                <div class="popup-content">
+                    <h2 class="popup-title">Choose Game Mode</h2>
+                    <div class="popup-buttons">
+                        <button class="popup-button" id="single-player" onclick="singlePlayerButton()" >Single Player</button>
+                        <button class="popup-button" id="multi-player" onclick="twoPlayerButton()">Multi Player</button>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="game-board">
-            <div class="cell" id="cell-1"> </div>
-            <div class="cell" id="cell-2"> </div>
-            <div class="cell" id="cell-3"> </div>
-            <div class="cell" id="cell-4"> </div>
-            <div class="cell" id="cell-5"> </div>
-            <div class="cell" id="cell-6"> </div>
-            <div class="cell" id="cell-7"> </div>
-            <div class="cell" id="cell-8"> </div>
-            <div class="cell" id="cell-9"> </div>
-        </div>
+            <div class="game-board">
+                <div class="cell" id="cell-1"> </div>
+                <div class="cell" id="cell-2"> </div>
+                <div class="cell" id="cell-3"> </div>
+                <div class="cell" id="cell-4"> </div>
+                <div class="cell" id="cell-5"> </div>
+                <div class="cell" id="cell-6"> </div>
+                <div class="cell" id="cell-7"> </div>
+                <div class="cell" id="cell-8"> </div>
+                <div class="cell" id="cell-9"> </div>
+            </div>
 
-        <div class="game-info">
-            <p class="game-info-text"><span id="current-player">Current Player: X</span></p>
-            <button class="game-info-button" id="reset-button">Reset</button>
-        </div>
+            <div class="game-info">
+                <p class="game-info-text"><span id="current-player">Current Player: X</span></p>
+                <button class="game-info-button" id="reset-button">Reset</button>
+            </div>
          
+        </div >
+
 
     </body>
 
