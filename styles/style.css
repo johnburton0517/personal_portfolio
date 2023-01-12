@@ -38,11 +38,15 @@
     font-size: 1.5rem;
 }
 
+.projects-page {
+    background-color: white;
+}
+
 /* projects section */
 .projectsText.card {
     height: 280px;
     cursor: pointer;
-    transition: transform .2s;
+    transition: transform .2s;  
 }
 .projectsIcon {
     font-size: 36px;

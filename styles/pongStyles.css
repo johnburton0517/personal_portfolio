@@ -4,11 +4,12 @@ body {
     color: white;
     padding: 10px;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 
     /* border around body */
-    border: 10px solid #4e54c8;
-    border-radius: 10px;
-    margin: 0;
+    /* border: 10px solid #4e54c8; */
+    /* border-radius: 10px; */
+    /* margin: 0; */
 }
 
 /* increase size of h1 */
@@ -22,15 +23,10 @@ h1 {
     padding: 15px;
 }
 
-/* style class gallery for images to scroll horizontal 
-   start with first image in the middle of screen, and click on the one to the right to move it to hte middle*/
 .pongImg {
     display: grid;
     text-align: center;
-    /* round edges */
     border-radius: 10px;
-
-    /* opacity: 0; */
 }
 
 .gallery {
