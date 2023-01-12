@@ -58,6 +58,11 @@ card3.addEventListener('click', function() {
     
     // translate card to middle of screen
     card.style.transform = 'translate(-106%, -50%)';
+
+    // redirect to href=CircleRacing.html after .5 seconds
+    setTimeout(function() {
+        window.location.href = 'CircleRacing.html';
+    }, 500);
     
 });
 
