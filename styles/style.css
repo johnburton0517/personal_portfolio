@@ -7,7 +7,6 @@
 /* hero background image */
 .bgimage {
     height:100vh;
-    /* background: url('../images/virtual_background_willy_b_2.jpg'); */
     background-size:cover;
     position:relative;
 }
@@ -32,12 +31,40 @@
 .imageAboutPage {
     /* width: 100%; */
     width: 75%;
+    border-radius: 15px;
+    /* shadow effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .about-page {
     height: 100vh;
     background-color: #4a4fba;
     color: white;
     font-size: 1.5rem;
+    border: 1px solid #4a4fba;
+    /* fit text on page */
+    width: auto;
+    height: auto;
+}
+
+.about-subtext {
+    /* text color transparent white */
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.col-lg-8 {
+    /* slightly transparent background color */
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.about-bullet:hover {
+    color: white;
+}
+
+.projects-page {
+    background-color: white;
 }
 
 /* projects section */
@@ -45,6 +72,8 @@
     height: 280px;
     cursor: pointer;
     transition: transform .2s;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
 }
 .projectsIcon {
     font-size: 36px;
@@ -54,14 +83,16 @@
 .card-title {
     text-align: center;
 }
+
 .card:hover .projectsIcon {
     color: #4e54c8;
 }
 .projectsText:hover {
     transform: scale(1.05);
     border: 1px solid #4e54c8;
+    background-color: rgba(78, 84, 200, 0.1);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
-
 
 /* social media icons styling */
 .social-icons {

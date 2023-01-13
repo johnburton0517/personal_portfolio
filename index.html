@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="styles/style.css">
     <!-- bootstrap for menu bar -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a3727f8433.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -86,69 +88,86 @@
                 </div>
 
                 <div class="col-lg-8">
-                    <p> 
-                        My name is John Burton. I graduated from the University of South Carolina with a degree in Computer Engineering in 2022.                     
+                    <p class="about-subtext"> 
+                        My name is John Burton. I graduated from the University of South Carolina with a degree in Computer Engineering in 2022. I have a 
+                        passion for building and creating, and I love using my programming skills to bring ideas to life. Whether 
+                        I'm building a web application, creating a mobile app, or automating a task, I'm always looking for new challenges 
+                        and opportunities to learn and grow.
                     </p>
-                    <div class="row mt-3">
-                        <div class="col-md-6">
-                            <ul>
-                                <li>Name: John Burton</li>
-                                <li>Age: 23</li>
-                                <li>Occupation: Digital Technology Junior Analyst</li>
-
+                    
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h3>Languages</h3>
+                            <ul class="about-subtext">
+                                <!-- <li class="python-bullet">Python</li>
+                                <li class="java-bullet">Java</li> -->
+                                <li class="about-bullet">Python</li>
+                                <li class="about-bullet">Java</li>
+                                <li class="about-bullet">JavaScript</li>
+                                <li class="about-bullet">C++</li>
+                                <li class="about-bullet">HTML</li>
+                                <li class="about-bullet">CSS</li>
+                                <li class="about-bullet">SQL</li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="row mt-3">
-                        <p> I have experience in several languages, including Java, C++, Python, Javascript, CSS, and HTML. I have a 
-                            passion for building and creating, and I love using my programming skills to bring ideas to life. Whether 
-                            I'm building a web application, creating a mobile app, or automating a task, I'm always looking for new challenges 
-                            and opportunities to learn and grow.
-                        </p>
-                    </div>
+                        <div class="col-lg-6">
+                            <h3>Tools</h3>
+                            <ul class="about-subtext">
+                                <li class="about-bullet">Node.js</li>
+                                <li class="about-bullet">Django</li>
+                                <li class="about-bullet">Git</li>
+                                <li class="about-bullet">MySQL</li>
+                            </ul>
+                        </div>
+                    
                 </div>
             </div>
     </section>
 
 
     <!-- projects section-->
-    <section id="projects">
+    <section id="projects" class="projects-page">
         <div class="container">
             <h1 class="text-center">Projects</h1>
             <div class="row">
                 <div class="col-lg-4 mt-4">
-                    <a href="tictactoe.html" class="card-link">
-                        <div class="card projectsText">
+                    <!-- <a href="tictactoe.html" class="card-link"> -->
+                        <div class="card projectsText" id="card1">
                             <div class="card-body">
-                                <i class="fas projectsIcon fa-gamepad"></i>
+                                <!-- https://fontawesome.com/v4 -->
+                                <i class="fas projectsIcon fa-times" aria-hidden="true"></i>
                                 <h4 class="card-title mt-3">Tic Tac Toe</h4>
                                 <p class="card-text mt-3">
-                                    This is a simple Tic Tac Toe game that I created using HTML, CSS, and JavaScript. The user has the 
+                                    A simple Tic Tac Toe game that I created using HTML, CSS, and JavaScript. The user has the 
                                     option to play against another player or against the computer.
                                 </p>
                             </div>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card projectsText">
-                        <div class="card-body">
-                            <i class='fas projectsIcon fa-layer-group'></i>
-                            <h4 class="card-title mt-3">Website Design</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
-                            </p>
-                        </div>
-                    </div>  
+                    <!-- </a> -->
                 </div>
 
+                    <div class="col-lg-4 mt-4">
+                        <!-- <a href="pong.html" class="card-link"> -->
+                            <div class="card projectsText" id="card2" >
+                                <div class="card-body">
+                                    <i class="fas projectsIcon fa-gamepad"></i>
+                                    <h4 class="card-title mt-3">Pong</h4>
+                                    <p class="card-text mt-3">
+                                        A basic Pong game that I created using PyGame. This is a two player game where the players play to 5. 
+                                    </p>             
+                                </div>
+                            </div>
+                        <!-- </a> -->
+                    </div>
+
                 <div class="col-lg-4 mt-4">
-                    <div class="card projectsText">
+                    <div class="card projectsText" id="card3">
                         <div class="card-body">
-                            <i class='far projectsIcon fa-check-circle'></i>
-                            <h4 class="card-title mt-3">Website Deployment</h4>
-                            <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
-                                Some quick example text to build on the card title and make up the bulk of the card's content.
+                            <i class="fas projectsIcon fa-circle" aria-hidden="true"></i>        
+                            <h4 class="card-title mt-3">Circle Racing Game</h4>
+                            <p class="card-text mt-3">This is a game where three circles will race
+                                 around a track. Participating players should guess on which circle will win before clicking start. 
+                                 The circle to complete 5 laps first wins. The overall records of each circle will then be displayed on the screen.
                             </p>
                         </div>
                     </div>  
@@ -157,7 +176,7 @@
 
             <div class="row">
                 <div class="col-lg-4 mt-4">
-                    <div class="card projectsText">
+                    <div class="card projectsText" id="card4">
                         <div class="card-body">
                             <i class='fas projectsIcon fa-search'></i>
                             <h4 class="card-title mt-3">SEO</h4>
@@ -169,7 +188,7 @@
                 </div>
 
                 <div class="col-lg-4 mt-4">
-                    <div class="card projectsText">
+                    <div class="card projectsText" id="card5">
                         <div class="card-body">
                             <i class='fas projectsIcon fa-shield-alt'></i>
                             <h4 class="card-title mt-3">DevOps</h4>
@@ -181,7 +200,7 @@
                 </div>
 
                 <div class="col-lg-4 mt-4">
-                    <div class="card projectsText">
+                    <div class="card projectsText" id="card6">
                         <div class="card-body">
                             <i class='fas projectsIcon fa-wrench'></i>
                             <h4 class="card-title mt-3">QA</h4>
