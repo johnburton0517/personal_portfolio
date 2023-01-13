@@ -1,6 +1,7 @@
 /* display background color on navbar scroll */
 .navbarScroll {
     background-color: #05072a;
+    /* background-color: transparent; */
 }
 
 /* hero background image */
