@@ -29,22 +29,42 @@ const card6 = document.getElementById('card6');
 card1.addEventListener('click', function() {
     var card = document.getElementById('card1');
 
-    // send card to foreground
-    card.style.zIndex = '1';
+    // // send card to foreground
+    // card.style.zIndex = '1';
 
-    // transition speed
-    card.style.transition = 'transform .75s ease-in-out';
+    // // transition speed
+    // card.style.transition = 'transform .75s ease-in-out';
 
-    card.style.backgroundColor = 'white';
+    // card.style.backgroundColor = 'white';
 
-    // translate card to middle of screen
-    card.style.transform = 'translate(105%, -50%)';
+    // // translate card to middle of screen
+    // card.style.transform = 'translate(105%, -50%)';
 
-    // redirect to href=tictactoe.html after .5 seconds
-    setTimeout(function() {
-        window.location.href = 'tictactoe.html';
-    }, 750);
+    // // redirect to href=tictactoe.html after .5 seconds
+    // setTimeout(function() {
+    //     window.location.href = 'tictactoe.html';
+    // }, 750);
+
+
+    // change card1-expanded z-index to 1
+    var expandedCard = document.getElementById('card1-expanded');
+
+    // transition speed of opacity and z-index
+    // expandedCard.style.transition = 'opacity .75s ease-in-out, z-index .75s ease-in-out';
+    expandedCard.style.transition = 'opacity .75s ease-in-out';
+
+    expandedCard.style.zIndex = '1';
+    expandedCard.style.opacity = '1';
 });
+
+function card1Back() {
+    var expandedCard = document.getElementById('card1-expanded');
+
+    expandedCard.style.transition = 'opacity .75s ease-in-out';
+
+    expandedCard.style.zIndex = '-1';
+    expandedCard.style.opacity = '0';
+}
 
 card2.addEventListener('click', function() {
     var card = document.getElementById('card2');
